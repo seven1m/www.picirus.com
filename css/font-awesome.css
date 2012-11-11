@@ -1,0 +1,303 @@
+/*  Font Awesome
+    the iconic font designed for use with Twitter Bootstrap
+    -------------------------------------------------------
+    The full suite of pictographic icons, examples, and documentation
+    can be found at: http://fortawesome.github.com/Font-Awesome/
+
+    License
+    -------------------------------------------------------
+    The Font Awesome webfont, CSS, and LESS files are licensed under CC BY 3.0:
+    http://creativecommons.org/licenses/by/3.0/ A mention of
+    'Font Awesome - http://fortawesome.github.com/Font-Awesome' in human-readable
+    source code is considered acceptable attribution (most common on the web).
+    If human readable source code is not available to the end user, a mention in
+    an 'About' or 'Credits' screen is considered acceptable (most common in desktop
+    or mobile software).
+
+    Contact
+    -------------------------------------------------------
+    Email: dave@davegandy.com
+    Twitter: http://twitter.com/fortaweso_me
+    Work: http://lemonwi.se co-founder
+
+    */
+@font-face {
+  font-family: "FontAwesome";
+  src: url('fontawesome-webfont.eot');
+  src: url('fontawesome-webfont.eot?#iefix') format('eot'), url('fontawesome-webfont.woff') format('woff'), url('fontawesome-webfont.ttf') format('truetype'), url('fontawesome-webfont.svg#FontAwesome') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*  Font Awesome styles
+    ------------------------------------------------------- */
+[class^="feicon-"]:before, [class*=" feicon-"]:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: inherit;
+}
+a [class^="feicon-"], a [class*=" feicon-"] {
+  display: inline-block;
+  text-decoration: inherit;
+}
+/* makes the font 33% larger relative to the icon container */
+.feicon-large:before {
+  vertical-align: top;
+  font-size: 1.3333333333333333em;
+}
+.btn [class^="feicon-"], .btn [class*=" feicon-"] {
+  /* keeps button heights with and without icons the same */
+
+  line-height: .9em;
+}
+li [class^="feicon-"], li [class*=" feicon-"] {
+  display: inline-block;
+  width: 1.25em;
+  text-align: center;
+}
+li .feicon-large[class^="feicon-"], li .feicon-large[class*=" feicon-"] {
+  /* 1.5 increased font size for feicon-large * 1.25 width */
+
+  width: 1.875em;
+}
+li[class^="feicon-"], li[class*=" feicon-"] {
+  margin-left: 0;
+  list-style-type: none;
+}
+li[class^="feicon-"]:before, li[class*=" feicon-"]:before {
+  text-indent: -2em;
+  text-align: center;
+}
+li[class^="feicon-"].feicon-large:before, li[class*=" feicon-"].feicon-large:before {
+  text-indent: -1.3333333333333333em;
+}
+/*  Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+    readers do not read off random characters that represent icons */
+.feicon-glass:before                { content: "\f000"; }
+.feicon-music:before                { content: "\f001"; }
+.feicon-search:before               { content: "\f002"; }
+.feicon-envelope:before             { content: "\f003"; }
+.feicon-heart:before                { content: "\f004"; }
+.feicon-star:before                 { content: "\f005"; }
+.feicon-star-empty:before           { content: "\f006"; }
+.feicon-user:before                 { content: "\f007"; }
+.feicon-film:before                 { content: "\f008"; }
+.feicon-th-large:before             { content: "\f009"; }
+.feicon-th:before                   { content: "\f00a"; }
+.feicon-th-list:before              { content: "\f00b"; }
+.feicon-ok:before                   { content: "\f00c"; }
+.feicon-remove:before               { content: "\f00d"; }
+.feicon-zoom-in:before              { content: "\f00e"; }
+
+.feicon-zoom-out:before             { content: "\f010"; }
+.feicon-off:before                  { content: "\f011"; }
+.feicon-signal:before               { content: "\f012"; }
+.feicon-cog:before                  { content: "\f013"; }
+.feicon-trash:before                { content: "\f014"; }
+.feicon-home:before                 { content: "\f015"; }
+.feicon-file:before                 { content: "\f016"; }
+.feicon-time:before                 { content: "\f017"; }
+.feicon-road:before                 { content: "\f018"; }
+.feicon-download-alt:before         { content: "\f019"; }
+.feicon-download:before             { content: "\f01a"; }
+.feicon-upload:before               { content: "\f01b"; }
+.feicon-inbox:before                { content: "\f01c"; }
+.feicon-play-circle:before          { content: "\f01d"; }
+.feicon-repeat:before               { content: "\f01e"; }
+
+/* \f020 doesn't work in Safari. all shifted one down */
+.feicon-refresh:before              { content: "\f021"; }
+.feicon-list-alt:before             { content: "\f022"; }
+.feicon-lock:before                 { content: "\f023"; }
+.feicon-flag:before                 { content: "\f024"; }
+.feicon-headphones:before           { content: "\f025"; }
+.feicon-volume-off:before           { content: "\f026"; }
+.feicon-volume-down:before          { content: "\f027"; }
+.feicon-volume-up:before            { content: "\f028"; }
+.feicon-qrcode:before               { content: "\f029"; }
+.feicon-barcode:before              { content: "\f02a"; }
+.feicon-tag:before                  { content: "\f02b"; }
+.feicon-tags:before                 { content: "\f02c"; }
+.feicon-book:before                 { content: "\f02d"; }
+.feicon-bookmark:before             { content: "\f02e"; }
+.feicon-print:before                { content: "\f02f"; }
+
+.feicon-camera:before               { content: "\f030"; }
+.feicon-font:before                 { content: "\f031"; }
+.feicon-bold:before                 { content: "\f032"; }
+.feicon-italic:before               { content: "\f033"; }
+.feicon-text-height:before          { content: "\f034"; }
+.feicon-text-width:before           { content: "\f035"; }
+.feicon-align-left:before           { content: "\f036"; }
+.feicon-align-center:before         { content: "\f037"; }
+.feicon-align-right:before          { content: "\f038"; }
+.feicon-align-justify:before        { content: "\f039"; }
+.feicon-list:before                 { content: "\f03a"; }
+.feicon-indent-left:before          { content: "\f03b"; }
+.feicon-indent-right:before         { content: "\f03c"; }
+.feicon-facetime-video:before       { content: "\f03d"; }
+.feicon-picture:before              { content: "\f03e"; }
+
+.feicon-pencil:before               { content: "\f040"; }
+.feicon-map-marker:before           { content: "\f041"; }
+.feicon-adjust:before               { content: "\f042"; }
+.feicon-tint:before                 { content: "\f043"; }
+.feicon-edit:before                 { content: "\f044"; }
+.feicon-share:before                { content: "\f045"; }
+.feicon-check:before                { content: "\f046"; }
+.feicon-move:before                 { content: "\f047"; }
+.feicon-step-backward:before        { content: "\f048"; }
+.feicon-fast-backward:before        { content: "\f049"; }
+.feicon-backward:before             { content: "\f04a"; }
+.feicon-play:before                 { content: "\f04b"; }
+.feicon-pause:before                { content: "\f04c"; }
+.feicon-stop:before                 { content: "\f04d"; }
+.feicon-forward:before              { content: "\f04e"; }
+
+.feicon-fast-forward:before         { content: "\f050"; }
+.feicon-step-forward:before         { content: "\f051"; }
+.feicon-eject:before                { content: "\f052"; }
+.feicon-chevron-left:before         { content: "\f053"; }
+.feicon-chevron-right:before        { content: "\f054"; }
+.feicon-plus-sign:before            { content: "\f055"; }
+.feicon-minus-sign:before           { content: "\f056"; }
+.feicon-remove-sign:before          { content: "\f057"; }
+.feicon-ok-sign:before              { content: "\f058"; }
+.feicon-question-sign:before        { content: "\f059"; }
+.feicon-info-sign:before            { content: "\f05a"; }
+.feicon-screenshot:before           { content: "\f05b"; }
+.feicon-remove-circle:before        { content: "\f05c"; }
+.feicon-ok-circle:before            { content: "\f05d"; }
+.feicon-ban-circle:before           { content: "\f05e"; }
+
+.feicon-arrow-left:before           { content: "\f060"; }
+.feicon-arrow-right:before          { content: "\f061"; }
+.feicon-arrow-up:before             { content: "\f062"; }
+.feicon-arrow-down:before           { content: "\f063"; }
+.feicon-share-alt:before            { content: "\f064"; }
+.feicon-resize-full:before          { content: "\f065"; }
+.feicon-resize-small:before         { content: "\f066"; }
+.feicon-plus:before                 { content: "\f067"; }
+.feicon-minus:before                { content: "\f068"; }
+.feicon-asterisk:before             { content: "\f069"; }
+.feicon-exclamation-sign:before     { content: "\f06a"; }
+.feicon-gift:before                 { content: "\f06b"; }
+.feicon-leaf:before                 { content: "\f06c"; }
+.feicon-fire:before                 { content: "\f06d"; }
+.feicon-eye-open:before             { content: "\f06e"; }
+
+.feicon-eye-close:before            { content: "\f070"; }
+.feicon-warning-sign:before         { content: "\f071"; }
+.feicon-plane:before                { content: "\f072"; }
+.feicon-calendar:before             { content: "\f073"; }
+.feicon-random:before               { content: "\f074"; }
+.feicon-comment:before              { content: "\f075"; }
+.feicon-magnet:before               { content: "\f076"; }
+.feicon-chevron-up:before           { content: "\f077"; }
+.feicon-chevron-down:before         { content: "\f078"; }
+.feicon-retweet:before              { content: "\f079"; }
+.feicon-shopping-cart:before        { content: "\f07a"; }
+.feicon-folder-close:before         { content: "\f07b"; }
+.feicon-folder-open:before          { content: "\f07c"; }
+.feicon-resize-vertical:before      { content: "\f07d"; }
+.feicon-resize-horizontal:before    { content: "\f07e"; }
+
+.feicon-bar-chart:before            { content: "\f080"; }
+.feicon-twitter-sign:before         { content: "\f081"; }
+.feicon-facebook-sign:before        { content: "\f082"; }
+.feicon-camera-retro:before         { content: "\f083"; }
+.feicon-key:before                  { content: "\f084"; }
+.feicon-cogs:before                 { content: "\f085"; }
+.feicon-comments:before             { content: "\f086"; }
+.feicon-thumbs-up:before            { content: "\f087"; }
+.feicon-thumbs-down:before          { content: "\f088"; }
+.feicon-star-half:before            { content: "\f089"; }
+.feicon-heart-empty:before          { content: "\f08a"; }
+.feicon-signout:before              { content: "\f08b"; }
+.feicon-linkedin-sign:before        { content: "\f08c"; }
+.feicon-pushpin:before              { content: "\f08d"; }
+.feicon-external-link:before        { content: "\f08e"; }
+
+.feicon-signin:before               { content: "\f090"; }
+.feicon-trophy:before               { content: "\f091"; }
+.feicon-github-sign:before          { content: "\f092"; }
+.feicon-upload-alt:before           { content: "\f093"; }
+.feicon-lemon:before                { content: "\f094"; }
+.feicon-phone:before                { content: "\f095"; }
+.feicon-check-empty:before          { content: "\f096"; }
+.feicon-bookmark-empty:before       { content: "\f097"; }
+.feicon-phone-sign:before           { content: "\f098"; }
+.feicon-twitter:before              { content: "\f099"; }
+.feicon-facebook:before             { content: "\f09a"; }
+.feicon-github:before               { content: "\f09b"; }
+.feicon-unlock:before               { content: "\f09c"; }
+.feicon-credit-card:before          { content: "\f09d"; }
+.feicon-rss:before                  { content: "\f09e"; }
+
+.feicon-hdd:before                  { content: "\f0a0"; }
+.feicon-bullhorn:before             { content: "\f0a1"; }
+.feicon-bell:before                 { content: "\f0a2"; }
+.feicon-certificate:before          { content: "\f0a3"; }
+.feicon-hand-right:before           { content: "\f0a4"; }
+.feicon-hand-left:before            { content: "\f0a5"; }
+.feicon-hand-up:before              { content: "\f0a6"; }
+.feicon-hand-down:before            { content: "\f0a7"; }
+.feicon-circle-arrow-left:before    { content: "\f0a8"; }
+.feicon-circle-arrow-right:before   { content: "\f0a9"; }
+.feicon-circle-arrow-up:before      { content: "\f0aa"; }
+.feicon-circle-arrow-down:before    { content: "\f0ab"; }
+.feicon-globe:before                { content: "\f0ac"; }
+.feicon-wrench:before               { content: "\f0ad"; }
+.feicon-tasks:before                { content: "\f0ae"; }
+
+.feicon-filter:before               { content: "\f0b0"; }
+.feicon-briefcase:before            { content: "\f0b1"; }
+.feicon-fullscreen:before           { content: "\f0b2"; }
+
+.feicon-group:before                { content: "\f0c0"; }
+.feicon-link:before                 { content: "\f0c1"; }
+.feicon-cloud:before                { content: "\f0c2"; }
+.feicon-beaker:before               { content: "\f0c3"; }
+.feicon-cut:before                  { content: "\f0c4"; }
+.feicon-copy:before                 { content: "\f0c5"; }
+.feicon-paper-clip:before           { content: "\f0c6"; }
+.feicon-save:before                 { content: "\f0c7"; }
+.feicon-sign-blank:before           { content: "\f0c8"; }
+.feicon-reorder:before              { content: "\f0c9"; }
+.feicon-list-ul:before              { content: "\f0ca"; }
+.feicon-list-ol:before              { content: "\f0cb"; }
+.feicon-strikethrough:before        { content: "\f0cc"; }
+.feicon-underline:before            { content: "\f0cd"; }
+.feicon-table:before                { content: "\f0ce"; }
+
+.feicon-magic:before                { content: "\f0d0"; }
+.feicon-truck:before                { content: "\f0d1"; }
+.feicon-pinterest:before            { content: "\f0d2"; }
+.feicon-pinterest-sign:before       { content: "\f0d3"; }
+.feicon-google-plus-sign:before     { content: "\f0d4"; }
+.feicon-google-plus:before          { content: "\f0d5"; }
+.feicon-money:before                { content: "\f0d6"; }
+.feicon-caret-down:before           { content: "\f0d7"; }
+.feicon-caret-up:before             { content: "\f0d8"; }
+.feicon-caret-left:before           { content: "\f0d9"; }
+.feicon-caret-right:before          { content: "\f0da"; }
+.feicon-columns:before              { content: "\f0db"; }
+.feicon-sort:before                 { content: "\f0dc"; }
+.feicon-sort-down:before            { content: "\f0dd"; }
+.feicon-sort-up:before              { content: "\f0de"; }
+
+.feicon-envelope-alt:before         { content: "\f0e0"; }
+.feicon-linkedin:before             { content: "\f0e1"; }
+.feicon-undo:before                 { content: "\f0e2"; }
+.feicon-legal:before                { content: "\f0e3"; }
+.feicon-dashboard:before            { content: "\f0e4"; }
+.feicon-comment-alt:before          { content: "\f0e5"; }
+.feicon-comments-alt:before         { content: "\f0e6"; }
+.feicon-bolt:before                 { content: "\f0e7"; }
+.feicon-sitemap:before              { content: "\f0e8"; }
+.feicon-umbrella:before             { content: "\f0e9"; }
+.feicon-paste:before                { content: "\f0ea"; }
+
+.feicon-user-md:before              { content: "\f200"; }
