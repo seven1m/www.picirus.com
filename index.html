@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
     <link rel="stylesheet" href="css/app.css">
+    <link href='http://fonts.googleapis.com/css?family=Stoke|Montserrat+Alternates' rel='stylesheet' type='text/css'>
     <link rel="icon" type="image/png" href="images/favicon.png">
     <script src="js/jquery.min.js"></script>
     <script type="text/javascript">
@@ -40,10 +41,10 @@
     </div>
 </div>-->
 <div class="container">
-  <h1 class="brand">Picirus</h1>
+  <h1 class="brand">picirus</h1>
 
-  <div class="hero-unit" >
-    <h1>Your cloud photos and files, right at home.</h1>
+  <div class="hero-unit">
+    <h1>All your photos and files, right at home.</h1>
 
     <p>
       Picirus is an always-on appliance that maintains a local copy of all of
@@ -77,7 +78,7 @@
 
           <h3>Sign Up</h3>
 
-          <p>We'll send you an email when we're ready to start accepting orders.</p>
+          <p>We'll send you an email when we're ready to start accepting orders!</p>
 
           <label class="desc" id="title1" for="Field1">
             Email
@@ -90,6 +91,7 @@
             <button type="submit" class="btn btn-primary">
               <i class="feicon-envelope feicon-white"></i> Submit
             </button>
+            <span class="muted">no spam, we promise!</span>
           </div>
           <div style="display:none;">
             <label for="comment">Do Not Fill This Out</label>
@@ -120,66 +122,53 @@
     </span>
   </div>
 
-    <!--<div class="row" id="signup">
-      <span class="span12">
-        <div class="well">
-          <h3>Features</h3>
-          <ul class="icons">
-            <li><i class="feicon-check"></i> auto-sync your cloud content</li>
-            <li><i class="feicon-check"></i> stand-alone, no PC needed<li>
-            <li><i class="feicon-check"></i> unlimited accounts</li>
-            <li><i class="feicon-check"></i> expandable storage</li>
-            <li><i class="feicon-check"></i> no monthly fees<li>
-          </ul>
-        </div>
-      </span>
-    </div>-->
+  <div class="row main-features">
+    <div class="span4">
+      <div class="well">
+        <h4><i class="feicon-home"></i> Ownership</h4>
 
-    <div class="row main-features">
-      <div class="span4">
-        <div class="well">
-          <h4><i class="feicon-home"></i> Ownership</h4>
+        <p>Bring your cloud files back down to earth.
+        Picirus keeps a copy of your stuff at your home so you know right where everything is.
+        Your data should only be "on loan" to the cloud.</p>
 
-          <p>Bring your cloud files back down to earth.
-          Picirus keeps a copy of your stuff at your home so you know right where everything is.
-          Your data should only be "on loan" to the cloud.</p>
-
-          <p><a href="images/screenshots/image.png"><img src="images/screenshots/image.tn.png"/></a></p>
-        </div>
-      </div>
-      <div class="span4">
-        <div class="well">
-          <h4><i class="feicon-lock"></i> Security</h4>
-
-          <p>Every day, people lose data in the cloud due to hackers and accidents.
-          Picirus is the easiest and most cost-effective way to ensure you have a second copy of your precious moments.</p>
-
-          <p><a href="images/screenshots/dashboard.png"><img src="images/screenshots/dashboard.tn.png"/></a></p>
-        </div>
-      </div>
-      <div class="span4">
-        <div class="well">
-          <h4><i class="feicon-refresh"></i> Recovery</h4>
-
-          <p>If you get hacked, or if you're victim of a software glitch that wipes out your
-          photos in the cloud, you should not have to start over. Recover your digital valuables quickly.</p>
-
-          <p><a href="images/screenshots/metadata.png"><img src="images/screenshots/metadata.tn.png"/></a></p>
-        </div>
+        <p><a href="images/screenshots/image.png"><img src="images/screenshots/image.tn.png"/></a></p>
       </div>
     </div>
-    <div class="footer">
-      <div>
-        <p class="muted">
-          Picirus is a product of <a href="http://tulsa.startupweekend.org/" target="_blank">Tulsa Startup Weekend 2012</a>
-          that leverages the <a href="http://www.raspberrypi.org/" target="_blank">Rasberry Pi</a> to provide an on-premise appliance
-          that maintains a local copy of all your online stuff.
-        </p>
-        <p class="muted">
-          &copy; Copyright 2012, TJRM, Inc.
-        </p>
+    <div class="span4">
+      <div class="well">
+        <h4><i class="feicon-lock"></i> Security</h4>
+
+        <p>Every day, people lose data in the cloud due to hackers and accidents.
+        Picirus is the easiest and most cost-effective way to ensure you have a second copy of your precious moments.</p>
+
+        <p><a href="images/screenshots/dashboard.png"><img src="images/screenshots/dashboard.tn.png"/></a></p>
       </div>
     </div>
+    <div class="span4">
+      <div class="well">
+        <h4><i class="feicon-refresh"></i> Recovery</h4>
+
+        <p>If you get hacked, or if you're victim of a software glitch that wipes out your
+        photos in the cloud, you should not have to start over. Recover your digital valuables quickly.</p>
+
+        <p><a href="images/screenshots/metadata.png"><img src="images/screenshots/metadata.tn.png"/></a></p>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div>
+      <p class="muted">
+        Picirus is a product of <a href="http://tulsa.startupweekend.org/" target="_blank">Tulsa Startup Weekend 2012</a>
+        that leverages the <a href="http://www.raspberrypi.org/" target="_blank">Rasberry Pi</a> to provide an on-premise appliance
+        that maintains a local copy of all your online stuff.
+      </p>
+      <p class="muted">
+        &copy; Copyright 2012, TJRM, Inc. &middot;
+        <a href="mailto:info@picirus.com">info@picirus.com</a> &middot;
+        <a href="http://twitter.com/picirus">@picirus</a>
+      </p>
+    </div>
+  </div>
 </div>
 <script src="js/bootstrap.min.js"></script>
 </body>
