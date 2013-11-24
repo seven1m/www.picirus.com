@@ -2222,6 +2222,16 @@ li[class^="feicon-"].feicon-large:before, li[class*=" feicon-"].feicon-large:bef
 
 /* app */
 body {
+  border-top: 10px solid #007b99;
+}
+
+h1.brand {
+  text-align: center;
+  font-weight: normal;
+  font-family: "Montserrat Alternates", Arial, sans-serif;
+  font-size: 34pt;
+  margin: 20px 0 25px 0;
+  color: #007b99;
 }
 
 .hero-unit {
@@ -2354,14 +2364,6 @@ nav h1 {
 
 nav img {
   position: absolute;
-}
-
-h1.brand {
-  float: left;
-  margin: 40px 0;
-  font-weight: normal;
-  font-family: "Montserrat Alternates", Arial, sans-serif;
-  font-size: 54px;
 }
 
 .ad {
